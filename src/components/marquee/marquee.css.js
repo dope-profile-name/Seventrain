@@ -24,12 +24,14 @@ export const Container = styled.div`
       border-bottom: 1px solid white;
       display: flex;
       position: absolute;
-      top: 45%;
+      top: 54%;
       width: 800px;
       height: 210px;
       justify-content: center;
       align-items: center;
-      background-image: linear-gradient(#A1C381, #8AA291);
+      background: black;
+      opacity: 0.75;
+      /*background-image: linear-gradient(#A1C381, #8AA291);*/
       overflow: hidden;
       transform-style: preserve-3d;
    }
@@ -41,23 +43,24 @@ export const Container = styled.div`
    }
    .box.box1 h2
    {
-      color: #fff;
+      /*color: #fff;*/
 
    }
    .box.box2 h2
    {
-      color: #fff;
+      /*color: #fff;*/
       left: -100%;
 
    }
    .box.box2
    {
       /*background: #673ab7;*/
-      background-image: linear-gradient(#A1C381, #8AA291);
+      /*background-image: linear-gradient(#A1C381, #8AA291);*/
       transform-origin: left;
       transform: perspective(300px) translateX(50%) rotateY(15deg);
    }
    .box h2 {
+      color: white;
       position: absolute;
       margin: 0;
       padding: 0;

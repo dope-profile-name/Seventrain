@@ -16,12 +16,15 @@ const Index = ({ data }) => (
          <div id="circle" />
          <div id="circleO" />
          <Img style={{display: `block`, border: `1px solid white`, borderRadius: `50%`, position: `absolute`, top: `90px`,
-              left: `315px`, marginBottom: `15%`}} fixed={data.logoImage.childImageSharp.fixed} alt="Seventrain logo" />
+              left: `375px`, marginBottom: `15%`}} fixed={data.logoImage.childImageSharp.fixed} alt="Seventrain logo" />
 
          <Marquee />
-
-         <Moment id="clock" format="HH:mm DD/MM/YYYY" date={new Date()} />
       </Box>
+
+      <div id="clock" style={{ borderTop: `2px solid white`, marginTop: `60px`, marginLeft: `auto`, marginRight: `auto`,
+                       padding: `9px 0px 9px 9px`, width: `92%`}}>
+         <Moment format="HH:mm DD/MM/YYYY" date={new Date()} />
+      </div>
    </Layout>
 );
 

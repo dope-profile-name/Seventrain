@@ -1,32 +1,31 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: purple;
+  /*background: purple;*/
   margin: 0 auto;
-  height: 510px;
+  marginBottom: 15%;
+  height: 600px;
   maxHeight: 510px;
-  minWidth: 720px;
-  width: 100%;
-  maxWidth: 840px;
+  minWidth: 840px;
+  width: 840px;
+  maxWidth: 900px;
   position: relative;
 
 
 
    #clock {
-      border-top: 1px solid white;
-      position: absolute;
-      margin: 0 auto;
-      bottom: 0;
-      width: 90%;
-      relative: relative;
+      margin: 15% auto;
+      position: relative;
+      padding: 9px 0px 9px 9px;
+      width: 92%;
    }
 
   #circle {
       position: absolute;
       background: transparent;
-      border: 1px solid red;
+      border: 1px solid white;
       top: 90px;
-      left: 315px;
+      left: 375px;
       border-radius: 50%;
       height: 90px;
       width: 90px;
@@ -36,13 +35,14 @@ export const Container = styled.div`
       transform: rotate(20deg);
    }
    #circleO {
-       background: transparent;
+       background: black;
+       opacity: 0.6;
        border: 1px solid white;
        width: 200px;
        border-radius: 50%;
        height: 200px;
        top: 42px;
-       left: 261px;
+       left: 321px;
        position: absolute;
        margin: 0rem auto -18rem;
        z-index: 0;
