@@ -8,7 +8,7 @@ export const Container = styled.nav`
 
     li {
       font: 6rem Ubuntu;
-      font-size: 1.3rem;
+
 
       & + li {
         margin-left: 2rem;

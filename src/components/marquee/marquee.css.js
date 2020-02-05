@@ -15,24 +15,27 @@ export const Container = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 360px;
+   height: 300px;
+   maxHeight: 300px;
    overflow: hidden;
 
    .box {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
       display: flex;
       position: absolute;
+      top: 45%;
       width: 800px;
       height: 210px;
       justify-content: center;
       align-items: center;
-      background: white;
+      background-image: linear-gradient(#A1C381, #8AA291);
       overflow: hidden;
       transform-style: preserve-3d;
    }
    .box.box1
    {
       /*background: #673ab7;*/
-      background: transparent;
       transform-origin: right;
       transform: perspective(300px) translateX(-50%) rotateY(-15deg);
    }
@@ -50,7 +53,7 @@ export const Container = styled.div`
    .box.box2
    {
       /*background: #673ab7;*/
-      background: transparent;
+      background-image: linear-gradient(#A1C381, #8AA291);
       transform-origin: left;
       transform: perspective(300px) translateX(50%) rotateY(15deg);
    }

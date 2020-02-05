@@ -13,18 +13,15 @@ import { graphql } from 'gatsby';
 const Index = ({ data }) => (
    <Layout>
       <Box>
-         <Img style={{display: `block`, margin: `0% auto 7%`, background: `pink`}}
-            fixed={data.logoImage.childImageSharp.fixed}
-            alt="Seventrain logo" />
+         <div id="circle" />
+         <div id="circleO" />
+         <Img style={{display: `block`, border: `1px solid white`, borderRadius: `50%`, position: `absolute`, top: `90px`,
+              left: `315px`, marginBottom: `15%`}} fixed={data.logoImage.childImageSharp.fixed} alt="Seventrain logo" />
 
          <Marquee />
 
-         <div style={{borderTop: `1px solid white`, margin: `0`, padding: `.5rem 0rem 3rem 1.5rem`, position: `relative`}}>
-            <Moment format="HH:mm DD/MM/YYYY" date={new Date()} />
-         </div>
+         <Moment id="clock" format="HH:mm DD/MM/YYYY" date={new Date()} />
       </Box>
-
-
    </Layout>
 );
 
@@ -38,7 +35,7 @@ export const query = graphql`
     query indexQuery{
       logoImage: file(relativePath: { eq: "seventrain-logo.png" }) {
         childImageSharp {
-          fixed(width: 150, height: 150) {
+          fixed(width: 90, height: 90) {
             ...GatsbyImageSharpFixed
           }
         }

@@ -34,10 +34,11 @@ export default createGlobalStyle`
 
   body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    line-height: 1;
+    line-height: 1rem;
     font-size: 1.6rem;
     color: white;
     background-image: linear-gradient(#A1C381, #8AA291);
+    background-repeat: repeat-y;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
